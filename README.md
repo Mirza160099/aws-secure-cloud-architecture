@@ -1,8 +1,9 @@
 # AWS Secure Cloud Architecture
 
-A portfolio project demonstrating a **secure, scalable and observable AWS application architecture** using VPC segmentation, IAM, Application Load Balancing, Auto Scaling, CloudWatch, VPC Flow Logs and Terraform.
 
-> **Portfolio status:** This repository is an infrastructure-as-code and architecture demonstration. It does not represent a production system operated for MAS Tech, SalesmanForYou, Smart IMS, or any client.
+## Demo Preview
+
+![AWS architecture preview](assets/dashboard-preview.png)
 
 ## Business Problem
 
