@@ -1,0 +1,29 @@
+                         Internet
+                            |
+                         Route 53
+                            |
+                     Internet Gateway
+                            |
+                +-----------------------+
+                |   Public Subnets      |
+                |  ALB        NAT GW    |
+                +----|-----------|------+
+                     |           |
+             --------+-----------+---------
+             |                        |
+     +----------------+       +----------------+
+     | Private Subnet |       | Private Subnet |
+     | AZ-A           |       | AZ-B           |
+     | EC2 App        |       | EC2 App        |
+     +-------|--------+       +--------|-------+
+             \                      /
+              \---- Auto Scaling ---/
+                       |
+                 IAM / SSM Role
+                       |
+            CloudWatch + VPC Flow Logs
+                       |
+                    SNS Alerts
+
+Production extension:
+RDS / S3 / AWS Backup / CloudTrail / GuardDuty / Security Hub
